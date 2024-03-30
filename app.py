@@ -7,14 +7,14 @@ selection = {
     'earth',
     'mars',
     'moon',
+    'mercury',
+    'sun', # ???? should be always 0,0,0!
     'SATURN BARYCENTER',
     'URANUS BARYCENTER',
     'PLUTO BARYCENTER',
-    'jupiter BARYCENTER',
-    'mercury',
-    'neptune BARYCENTER',
-    'sun',
-    'venus BARYCENTER',
+    'JUPITER BARYCENTER',
+    'NEPTUNE BARYCENTER',
+    'VENUS BARYCENTER',
 }
 
 app = Flask(__name__)
