@@ -1,9 +1,8 @@
 server {
     listen 80;
-    server_name visgean.me www.visgean.me;
 
     location /planets/ {
         include proxy_params;
-        proxy_pass http://unix:/run/gunicorn.sock;
+        proxy_pass http://unix:/run/planets.sock;
     }
 }

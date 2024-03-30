@@ -19,7 +19,7 @@ selection = {
 
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/planets/")
 def planet_positions():
     ts = load.timescale()
     t = ts.now()
