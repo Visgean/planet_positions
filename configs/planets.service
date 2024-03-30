@@ -1,0 +1,14 @@
+[Unit]
+Description=gunicorn daemon
+Requires=planets.socket
+After=network.target
+
+[Service]
+User=www
+Group=www-data
+WorkingDirectory=/home/visgean/planet_positions
+ExecStart=/home/visgean/planet_positions/venv-planets/bin/gunicorn \
+          --access-logfile - \
+          --workers 3 \
+          --bind unix:/run/gunicorn.sock \
+          app:app
